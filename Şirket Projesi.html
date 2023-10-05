@@ -1,0 +1,42 @@
+<html>
+<head>
+
+
+</head>
+
+<body>
+
+<script>
+
+    var ifade = prompt("Make a sentence:");
+	
+	var kelimeler = ifade.split(' ');
+	
+	var EnUzunIndex = 0;
+	
+	var EnUzunKelime = kelimeler.sort(function(a,b){return b.length-a.length});
+	
+ 	for(var i = 0; i < kelimeler.length; i++){
+	
+	    if(kelimeler[i].length > EnUzunKelime){
+		
+		    EnUzunIndex = i;
+			EnUzunKelime = kelimeler[i].length;		
+		}
+	
+	
+	}
+	
+	
+	
+	alert(kelimeler[EnUzunIndex]);
+	
+
+
+
+</script>
+
+
+</body>
+
+</html>
